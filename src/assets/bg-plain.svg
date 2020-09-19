@@ -1,0 +1,35 @@
+<svg id="bg-plain" xmlns="http://www.w3.org/2000/svg" width="1920" height="1079" viewBox="0 0 1920 1079">
+  <defs>
+    <style>
+      .cls-1 {
+        stroke: rgba(46,46,46,0.3);
+      }
+
+      .cls-2 {
+        fill: rgba(46,46,46,0.3);
+      }
+
+      .cls-3 {
+        fill: #fff;
+      }
+
+      .cls-4 {
+        stroke: none;
+      }
+
+      .cls-5 {
+        fill: none;
+      }
+    </style>
+  </defs>
+  <g id="Rectangle_9" data-name="Rectangle 9" class="cls-1">
+    <rect class="cls-4" width="1920" height="1079"/>
+    <rect class="cls-5" x="0.5" y="0.5" width="1919" height="1078"/>
+  </g>
+  <rect id="Rectangle_10" data-name="Rectangle 10" class="cls-2" width="1503" height="124" transform="translate(417 120)"/>
+  <rect id="Rectangle_11" data-name="Rectangle 11" class="cls-2" width="1109" height="124" transform="translate(811 358)"/>
+  <path id="Path_41" data-name="Path 41" class="cls-2" d="M2727,7739H2610.552l-25.35,43.476,40.973,60.224-15.623,20.3H2727Z" transform="translate(-2310 -7619)"/>
+  <rect id="Rectangle_12" data-name="Rectangle 12" class="cls-2" width="1614" height="124" transform="translate(306 596)"/>
+  <rect id="Rectangle_13" data-name="Rectangle 13" class="cls-2" width="1777" height="124" transform="translate(143 834)"/>
+  <path id="Logo" class="cls-3" d="M-118-3380.329h12.934l34.1,38.41,30.033-46.494-30.033-53.452-35.275,47.034,35.275,6.418-47.033-.539,43.088-59.247-30.155-48.537L-71.114-3535l30.719,29.641h-8.623l-22.1-21.019-29.641,29.642,29.472,43.548.316-.434.05.078,26.211-41.036-26.505-2.156h35.128l-31.272,48.788,23.622,37.12L-28-3388.413l-42.967,64.132Z" transform="translate(327 3612)"/>
+</svg>

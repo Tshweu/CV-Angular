@@ -1,5 +1,6 @@
 /* Removed all default attributes from ancher tags
-*
+*  fixed spacing with padding
+* set font to times and color to white
 */
 a{
     all:unset;
@@ -8,6 +9,12 @@ a{
     font-family: 'Times New Roman', Times, serif; 
     color: white;
 }
+
+a:hover{
+    color: black;
+}
+
+
 /* Changed the font 
  * removed margins
  * removed padding
@@ -26,7 +33,7 @@ a{
 * 
 */
 .navigation {
-    margin: 70px 0;
+    margin: 50px 0;
     max-width: 700px;
     background-color: #FF0000;
     float: right;
