@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="778" height="540.579" viewBox="0 0 778 540.579">
+  <defs>
+    <filter id="Rectangle_23" x="213.074" y="196.275" width="564.926" height="344.303" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feFlood flood-opacity="0.353"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Path_44" x="0" y="0" width="342.907" height="367.338" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur-2"/>
+      <feFlood flood-opacity="0.302"/>
+      <feComposite operator="in" in2="blur-2"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="TextBubble" transform="translate(-336 -1225)">
+    <g transform="matrix(1, 0, 0, 1, 336, 1225)" filter="url(#Rectangle_23)">
+      <g id="Rectangle_23-2" data-name="Rectangle 23" transform="translate(222.07 202.28)" fill="#fff" stroke="#000" stroke-linejoin="round" stroke-width="10">
+        <rect width="546.926" height="326.303" rx="8" stroke="none"/>
+        <rect x="5" y="5" width="536.926" height="316.303" rx="3" fill="none"/>
+      </g>
+    </g>
+    <g transform="matrix(1, 0, 0, 1, 336, 1225)" filter="url(#Path_44)">
+      <g id="Path_44-2" data-name="Path 44" transform="translate(9 6)" fill="#fff" stroke-linejoin="round">
+        <path d="M 319.9072265625 344.337890625 L 5.00001335144043 344.337890625 L 5.00001335144043 4.999995231628418 L 319.9072265625 4.999995231628418 L 319.9072265625 344.337890625 Z" stroke="none"/>
+        <path d="M 9.999969482421875 10 L 9.999969482421875 339.337890625 L 314.9072570800781 339.337890625 L 314.9072570800781 10 L 9.999969482421875 10 M -3.0517578125e-05 0 L 324.9072570800781 0 L 324.9072570800781 349.337890625 L -3.0517578125e-05 349.337890625 L -3.0517578125e-05 0 Z" stroke="none" fill="#db0101"/>
+      </g>
+    </g>
+    <g id="person-24px" transform="translate(366.414 1276.053)">
+      <path id="Path_42" data-name="Path 42" d="M0,0H278.824V278.824H0Z" transform="translate(0 0)" fill="none"/>
+      <path id="Path_43" data-name="Path 43" d="M140.477,140.477A68.238,68.238,0,1,0,72.238,72.238,68.22,68.22,0,0,0,140.477,140.477Zm0,34.119C94.928,174.6,4,197.456,4,242.834v34.119H276.953V242.834C276.953,197.456,186.026,174.6,140.477,174.6Z" transform="translate(-1.064 -1.064)"/>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,40 @@
+/* Paragraph color set to black
+ * Font set to courier new
+ */
+p{
+    color: black;
+    font-family: 'Courier New', Courier, monospace;
+    max-width: 60%;
+    max-height: 30%; 
+    overflow: scroll;
+}
+
+
+.container{
+    position: relative;
+    text-align: center;
+    width: 100vw;
+    height: 100vh;
+    padding: 10%;
+}
+
+.centered{
+    display: block;
+    position: absolute;
+    top :70%;
+    left:25%;
+    width: 50%;
+    transform: translate(-50%,-50%); 
+    margin:auto;
+}
+
+#pic{
+    display: block;
+    position: absolute;
+    width: 65%;
+    margin: auto;
+    top :50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+}
+
