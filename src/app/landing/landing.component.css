@@ -1,0 +1,12 @@
+div{
+    background-image: url("/assets/background.svg") ;
+    background-size: cover;
+   height: 100vh;
+   width: 100vw;
+}
+/* span{
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+} */
