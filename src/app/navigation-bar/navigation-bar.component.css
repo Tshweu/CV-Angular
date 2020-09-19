@@ -3,6 +3,10 @@
 */
 a{
     all:unset;
+    padding: 15px;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif; 
+    color: white;
 }
 /* Changed the font 
  * removed margins
@@ -10,20 +14,20 @@ a{
  * set text to upper case
 */
 .navigation ul {
-  font: bold 11px;
-  font-family: 'Times New Roman', Times, serif; 
   margin: 0;
-  padding: 0;
+  padding: 15px 70px;
   text-transform: uppercase;
 }
 /* Putting all the nav items in a single line */
 .navigation li {
   display: inline-block;
 }
-/* Align Nav bar to the left of the page */
+/* Align Nav bar to the right of the page 
+* 
+*/
 .navigation {
     margin: 70px 0;
-    max-width: 960px;
-    background-color: #DB0101;
+    max-width: 700px;
+    background-color: #FF0000;
     float: right;
 }
