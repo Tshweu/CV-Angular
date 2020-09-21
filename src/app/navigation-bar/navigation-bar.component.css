@@ -14,6 +14,11 @@ a:hover{
     color: black;
 }
 
+.navbar-position {
+  position: fixed;  
+  top: 15px;
+  right: 0px;
+}
 
 /* Changed the font 
  * removed margins
