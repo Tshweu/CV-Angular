@@ -1,6 +1,84 @@
-div{
-    background-image: url("/assets/bg-plain.svg") ;
-    background-size: cover;
-   height: 100vh;
-   width: 100vw;
+div{   
+    /* background-size: auto; */
+    background-color: black;
+    height: 100vh;
+    width: 100vw;
+    top: 0%;
+    /* background-image: url("/assets/background-stripes.svg") ; */
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position-x: 100%;
+    background-position-y:190px;
+}
+
+/* #content p{
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+} */
+object{
+    width: 100vw;
+}
+
+#welcome{
+    margin: 0;
+    position: absolute;
+    top: 39%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#stack{
+    margin: 0;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#name{
+    margin: 0;
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-style: solid;
+    border-width: 10px;
+    padding: 3% 5%;
+    border-color: grey;
+}
+
+p{
+    display: block;
+    text-align: center;
+    color: white;
+    /* line-height: 30vh; */
+}
+
+@media only screen and (min-width: 1001px){
+    div{
+        background-position-x: 320px;
+        background-position-y:190px;
+    }
+}
+
+@media only screen and (max-width: 1000px){
+    div{
+        background-position-x: 200px;
+        background-position-y:190px;
+    }
+}
+@media only screen and (max-width: 800px){
+    div{
+        background-position-x: 200px;
+        background-position-y:220px;
+    }
+}
+@media only screen and (max-width: 700px){
+    div{
+        background-position-x: 200px;
+        background-position-y:250px;
+    }
 }
