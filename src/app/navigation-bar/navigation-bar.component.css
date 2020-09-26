@@ -98,8 +98,7 @@ a{
     height: 30vh;
     width: 30%;
 
-    background-color:#2E2E2E;
-    opacity: .5;
+    background-color:rgba(46, 46, 46, 50%);
 
     position: absolute;
     top: 110%;
