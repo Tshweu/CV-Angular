@@ -54,6 +54,7 @@ a{
     margin-top: 0;
     max-width: 100%;
     width: 100%;
+    /* overflow: hidden; */
   }
 }
 
@@ -88,8 +89,12 @@ a{
     position: fixed;
     height: 20px; 
   } */
-
   .navbar-menu{
+    display: none;
+    pointer-events: none;  
+  }
+
+  .navbar-menu-open{
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(5,1fr);
@@ -101,12 +106,12 @@ a{
     background-color:rgba(46, 46, 46, 50%);
 
     position: absolute;
-    top: 110%;
+    top: 150%;
     right: 5%;
     transform: translate(0,-10%);
-    /* display: none;
-    pointer-events: none; */  
+    
   }
+
   /* removes prior styling for horizontal menu */
   .navigation ul {
     margin: 0;

@@ -1,12 +1,12 @@
     <nav class="navigation">
         <!-- hamburger menu -->
-        <div class="hamburger">
+        <div class="hamburger" (click)="checkCollapse()">
             <div class="line"></div>
             <div class="line"></div>
             <div class="line"></div>
         </div>
         <!-- Nav bar items -->
-        <ul class="navbar-menu">
+        <ul class="{{ strClass }}">
             <li class="nav-item">
                 <a routerLink="/home" class="nav-link">HOME</a>
             </li>
