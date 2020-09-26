@@ -112,6 +112,22 @@ a{
     
   }
 
+  /* .navigation:hover +.nav-menu{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(5,1fr);
+
+    height: 30vh;
+    width: 30%;
+
+    background-color:rgba(46, 46, 46, 50%);
+
+    position: absolute;
+    top: 150%;
+    right: 5%;
+    transform: translate(0,-10%);
+  } */
+  
   /* removes prior styling for horizontal menu */
   .navigation ul {
     margin: 0;
