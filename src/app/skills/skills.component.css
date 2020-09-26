@@ -1,32 +1,72 @@
-/* .container{
-    height: 100vh;
-    width: 100vw; 
-    padding: 10%;  
-} */
-
 .container{
     position: relative;
     width: 100vw;
     height: 100vh;
 }
-
-/* .constraints{
-    position: relative;
-    width: 100%;
-    margin: auto;
-    top :40%;
-    left:20%;
-    transform: translate(-50%,-50%);
-} */
-
-#skills-title{
-    position: relative;
-    right: 0;
-    top: 7%;
-    width: 80%;
-    margin: auto;
+/* SET GRID MAX AND MIN SIZE
+ * SPACE ITEMS BY DIVIDING THE SPACE BETWEEN THEM
+ * AND SPACE AROUND THEM 
+ */
+.grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(200px,350px));
+    grid-template-rows: repeat(auto-fit,minmax(200px,auto));
+    margin: 0;
+    align-content: space-between;
+    justify-content: space-around;
+    row-gap: 2%;
 }
 
-#skills-cards{
-   width: 100%;
+.grid-item{
+    background-color: black;
+    margin: 0 auto;
+    padding: 5%;
+    text-align: center;
+    border-radius: 25px;
+}
+
+/* BUTTONS */
+.buttons{
+    padding: 2%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(30px,80px));
+    grid-template-rows: repeat(auto-fit,minmax(1fr,auto));
+    align-content: space-between;
+    justify-content: space-around;
+    grid-gap: 2%;
+}
+
+.b1{
+    background-image: url("/assets/cards/white-button.svg");
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size:contain;
+    width: 70px;
+}
+
+.b2{
+    background-image: url("/assets/cards/red-button.svg");
+    background-position: 50%;
+    color: white;
+    background-repeat: no-repeat;
+    background-size:contain;
+    width: 70px;
+}
+
+h1{
+    color: white;
+}
+
+h3{
+    font-size: 20px;
+    color: white;
+}
+
+p{
+    color: red;
+    padding: 2%;
+}
+
+#design-tools{
+    color: red;
 }

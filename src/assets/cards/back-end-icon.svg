@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="123.942" height="120" viewBox="0 0 123.942 120">
+  <g id="back-end-icon" transform="translate(-1404.757 -2897.374)">
+    <g id="cloud_queue-24px" transform="translate(1416.221 2897.374)">
+      <path id="Path_61" data-name="Path 61" d="M0,0H110.478V110.478H0Z" fill="none"/>
+      <path id="Path_62" data-name="Path 62" d="M89.073,31.8A34.49,34.49,0,0,0,24.627,22.6,27.608,27.608,0,0,0,27.62,77.652H87.462A22.95,22.95,0,0,0,89.073,31.8ZM87.462,68.446H27.62a18.413,18.413,0,1,1,0-36.826h3.268a25.314,25.314,0,0,1,49.669,6.9v2.3h6.9a13.81,13.81,0,0,1,0,27.619Z" transform="translate(0 14.413)" fill="#fff" stroke="#000" stroke-width="4"/>
+      <rect id="Rectangle_29" data-name="Rectangle 29" width="32.894" height="19.044" transform="translate(12.119 73.256)"/>
+    </g>
+    <g id="device_hub-24px" transform="translate(1404.757 2942.264)">
+      <path id="Path_59" data-name="Path 59" d="M0,0H75.11V75.11H0ZM0,0H75.11V75.11H0Z" fill="none"/>
+      <path id="Path_60" data-name="Path 60" d="M46.814,43.685,34.3,31.166V21.214a9.389,9.389,0,1,0-6.259,0v9.952L15.518,43.685H3V59.333H18.648V49.787L31.166,36.643,43.685,49.787v9.545H59.333V43.685Z" transform="translate(6.389 6.389)" fill="#fff" stroke="#000" stroke-width="3"/>
+    </g>
+  </g>
+</svg>
