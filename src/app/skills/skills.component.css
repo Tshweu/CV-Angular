@@ -3,6 +3,7 @@
     position: relative;
     width: 100vw;
     height: auto;
+    margin-bottom: 10% ;
 }
 /* added scroll to avoid cards overflowing
  * which ruins layout
@@ -81,7 +82,7 @@ p{
     grid-template-columns: 1fr 0.35fr 1fr 1fr;
     grid-template-rows: repeat(3,1fr);   
     min-height: 120px;
-    margin: 10% 0;
+    margin-top: 15%;
 }
 #head-logo{
     grid-column: 2;
@@ -111,7 +112,7 @@ p{
     grid-column: 3;
     justify-self: start;
     align-self: end;
-    font-size: xx-large;
+    font-size: large;
 }
 
 /*Skills levels 
@@ -120,11 +121,13 @@ p{
 div.skills-levels{
     display: block;
     background-color: lightgray;
+    border-radius: 15px;
     width: 80vw;
     height: auto;
     margin: auto;
     overflow: scroll;
-    padding: 10%;
+    padding: 5% 10% 20% 10%;
+
 }
 
 .skills-grid{
@@ -182,11 +185,11 @@ div.skills-levels{
 }
 .skill-6{
     background-color:maroon;
-    width: 50%;
+    width: 70%;
 }
 .skill-7{
     background-color: orangered;
-    width: 70%;
+    width: 60%;
 }
 .skill-8{
     background-color: green;
@@ -197,8 +200,47 @@ div.skills-levels{
     width: 50%;
 }
 /* Media queries */
-/* @media only screen and (max-width: 999){
-    div.skills-levels{
+@media only screen and (max-width: 999){
+    /* div.skills-levels{
         margin-top: 15px;
+    } */
+
+    #head-logo{
+        grid-column: 2;
+        grid-row: 1/4;
+        background: url(/assets/Logo-banner-small.svg);
+        background-repeat: no-repeat;
+        background-position: center;
     }
-} */
+
+    .heading-grid{
+        display: grid;
+        grid-template-columns: 1fr 0.1fr 1fr 1fr;
+        grid-template-rows: repeat(3,1fr);   
+        min-height: 40px;
+        margin-top: 15%;
+    }
+}
+
+@media only screen and (max-width: 480){
+    /* div.skills-levels{
+        margin-top: 15px;
+    } */
+
+    #head-logo{
+        grid-column: 2;
+        grid-row: 1/4;
+        background: url(/assets/Logo-banner-small.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+    }
+
+    .heading-grid{
+        display: grid;
+        grid-template-columns: 1fr 0.05fr 1fr 1fr;
+        grid-template-rows: repeat(3,1fr);   
+        max-width: 70px;
+        margin-top: 15%;
+    }
+}
