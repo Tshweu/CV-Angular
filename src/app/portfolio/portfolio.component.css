@@ -41,14 +41,12 @@
 .container{
     display: grid;
     grid-template-columns: repeat(auto-fill,minmax(190px,350px));
-    grid-template-rows: repeat(auto-fill,minmax(190px,auto));
+    grid-template-rows: repeat(auto-fill,minmax(350px,auto));
     margin: auto;
-    height: 100vh;
+    height: 160vh;
     margin-bottom: 20%;
     align-content: space-between;
     justify-content: space-around;
-    margin-bottom: 5%;
-    row-gap: 5%;
 }
 /* Card details for portfolio */
 .card{
@@ -58,4 +56,10 @@
     height: 100%;
     text-align: center;
     color: white;
+}
+
+@media screen and(max-width: 500){
+    .container{
+
+    }
 }
