@@ -200,12 +200,12 @@ div.skills-levels{
     width: 50%;
 }
 /* Media queries */
-@media only screen and (max-width: 999){
+@media screen and (max-width: 999){
     /* div.skills-levels{
         margin-top: 15px;
     } */
 
-    #head-logo{
+    div#head-logo{
         grid-column: 2;
         grid-row: 1/4;
         background: url(/assets/Logo-banner-small.svg);
