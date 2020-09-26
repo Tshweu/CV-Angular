@@ -1,28 +1,5 @@
-/* Removed all default attributes from ancher tags
-*  fixed spacing with padding
-* set font to times and color to white
-*/
-a{
-    all:unset;
-    padding: 15px;
-    font-size: 20px;
-    font-family: 'Times New Roman', Times, serif; 
-    color: white;
-}
-
-a:hover{
-    color: black;
-}
-
-.navbar-position {
-  position: fixed;  
-  top: 8px;
-  right: 0px;
-}
-
-/* Changed the font 
+/*  
  * removed margins
- * removed padding
  * set text to upper case
 */
 .navigation ul {
@@ -38,8 +15,125 @@ a:hover{
 * 
 */
 .navigation {
+    position: fixed;  
+    top: 8px;
+    right: 0px;
     margin: 50px 0;
     max-width: 700px;
     background-color:#2E2E2E;
     float: right;
+}
+/*used both to ensure it works on both chrome and safari*/
+.nav-item:hover, a:hover{
+  color: black;
+}
+
+.navbar-menu{
+  display: flex;
+  color: white;
+}
+/* Removed all default attributes from ancher tags
+*  fixed spacing with padding
+* set font to times and color to white
+*/
+a{
+  all:unset;
+  padding: 15px;
+  font-size: 20px;
+  font-family: 'Times New Roman', Times, serif; 
+  color: white;
+}
+
+/* Media Queries */
+@media screen and (max-width:800px){
+  .navigation {
+    position: fixed;  
+    top: 0px;
+    right: 0px;
+    padding: 0;
+    margin-top: 0;
+    max-width: 100%;
+    width: 100%;
+    /* overflow: hidden; */
+  }
+}
+
+@media screen and (max-width:700px){
+
+  .line{
+    width: 30px;
+    height: 3px;
+    background-color: white;
+    margin: 5px;
+  }
+
+  nav{
+    position: relative;
+  }
+
+  .hamburger{
+    position: absolute;
+    cursor: pointer;
+    right: 5%;
+    top: 50%;
+    transform: translate(-5%,-50%);
+  }
+
+  nav.navigation{
+    height: 50px;
+    margin: 0;
+    width: 100vw;
+  }
+
+  /* a.nav-link{
+    position: fixed;
+    height: 20px; 
+  } */
+  .navbar-menu{
+    display: none;
+    pointer-events: none;  
+  }
+
+  .navbar-menu-open{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(5,1fr);
+
+    
+    height: 30vh;
+    width: 30%;
+
+    background-color:rgba(46, 46, 46, 50%);
+
+    position: absolute;
+    top: 150%;
+    right: 5%;
+    transform: translate(0,-10%);
+    
+  }
+
+  /* .navigation:hover +.nav-menu{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(5,1fr);
+
+    height: 30vh;
+    width: 30%;
+
+    background-color:rgba(46, 46, 46, 50%);
+
+    position: absolute;
+    top: 150%;
+    right: 5%;
+    transform: translate(0,-10%);
+  } */
+  
+  /* removes prior styling for horizontal menu */
+  .navigation ul {
+    margin: 0;
+    padding: 5px;
+    text-align: center;
+    width: fit-content;
+    height: fit-content;
+  }
 }

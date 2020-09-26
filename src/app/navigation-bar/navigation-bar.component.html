@@ -1,21 +1,26 @@
-<div class="navbar-position">
     <nav class="navigation">
-        <ul class="navbar-menu">
+        <!-- hamburger menu -->
+        <div class="hamburger" (click)="checkCollapse()">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+        <!-- Nav bar items -->
+        <ul class="{{ strClass }}">
             <li class="nav-item">
-                <a routerLink="/home" class="nav-link">HOME</a>
+                <a routerLink="/home" class="nav-link" (click)="doCollapse()">HOME</a>
             </li>
             <li class="nav-item">
-                <a routerLink="/about" class="nav-link">ABOUT</a>
+                <a routerLink="/about" class="nav-link" (click)="doCollapse()">ABOUT</a>
             </li>
             <li class="nav-item">
-                <a routerLink="/skills" class="nav-link">SKILLS</a>
+                <a routerLink="/skills" class="nav-link" (click)="doCollapse()">SKILLS</a>
             </li>
             <li class="nav-item">
-                <a routerLink="/portfolio" class="nav-link">PORTFOLIO</a>
+                <a routerLink="/portfolio" class="nav-link" (click)="doCollapse()">PORTFOLIO</a>
             </li>
             <li class="nav-item">
-                <a routerLink="/contact" class="nav-link">CONTACT</a>
+                <a routerLink="/contact" class="nav-link" (click)="doCollapse()">CONTACT</a>
             </li>
         </ul>
     </nav>
-</div>

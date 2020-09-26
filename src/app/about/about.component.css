@@ -51,6 +51,7 @@ p{
     max-width: 60%;
     max-height: 30%; 
     overflow: scroll;
+    margin: 0;
 }
 
 
@@ -60,6 +61,7 @@ div.container{
     width: 100vw;
     height: 100vh;
     padding: 0%;
+    overflow: hidden;
 }
 
 .centered{
@@ -68,8 +70,8 @@ div.container{
     top :80%;
     left:35%;
     width: 50%;
-    transform: translate(-50%,-50%); 
-    margin:auto;
+    transform: translate(-50%,-50%);
+    max-width: 460px;
 }
 
 #pic{
@@ -99,6 +101,7 @@ div.container{
         top :50%;
         left:70%;
         width: 100%;
+        margin:0;
         transform: translate(-50%,-50%);
         text-align: justify;
     }
@@ -116,7 +119,23 @@ div.container{
         top :60%;
         left:70%;
         width: 100%;
+        margin: 0;
         transform: translate(-50%,-50%);
         text-align: justify;
+        max-width: 350px;
+    }
+}
+
+@media only screen and (max-width:550px){
+    .centered{
+        display: block;
+        position: absolute;
+        top :60%;
+        left:70%;
+        width: 100%;
+        margin: 0;
+        transform: translate(-50%,-50%);
+        text-align: justify;
+        max-width: 250px;
     }
 }
