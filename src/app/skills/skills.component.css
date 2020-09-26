@@ -1,17 +1,25 @@
 .container{
+    display: block;
     position: relative;
     width: 100vw;
-    height: 100vh;
+    height: auto;
+}
+/* added scroll to avoid cards overflowing
+ * which ruins layout
+*/
+.grid-block{
+    display: block;
+    overflow: scroll;
 }
 /* SET GRID MAX AND MIN SIZE
  * SPACE ITEMS BY DIVIDING THE SPACE BETWEEN THEM
  * AND SPACE AROUND THEM 
  */
-.grid{
+div.grid{
     display: grid;
     grid-template-columns: repeat(auto-fit,minmax(200px,350px));
     grid-template-rows: repeat(auto-fit,minmax(200px,auto));
-    margin: 0;
+    margin: auto;
     align-content: space-between;
     justify-content: space-around;
     row-gap: 2%;
@@ -67,3 +75,96 @@ p{
 #design-tools{
     color: red;
 }
+/* horizontal rule */
+.heading{
+    
+}
+
+/*Skills levels 
+ *
+ */
+div.skills-levels{
+    display: block;
+    background-color: lightgray;
+    width: 80vw;
+    height: auto;
+    margin: auto;
+    overflow: scroll;
+    padding: 10%;
+}
+
+.skills-grid{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: repeat(20,1fr);
+    align-content: space-between;
+    justify-content: space-around;
+    row-gap: 10%;
+    grid-gap: 10%;
+    margin: 0;
+}
+
+.prog{
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    margin: 0;
+}
+
+.skill-1,.skill-2,.skill-3,
+.skill-4,.skill-5,.skill-6,
+.skill-7,.skill-8
+{    
+    height: 100%;
+    margin: 0%;
+    padding: 0;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+}
+
+.skill-1{
+    background-color: #DB0101;
+    width: 60%;
+}
+
+.skill-2{
+    background-color: grey;
+    width: 50%;
+}
+
+.skill-3{
+    background-color: purple;
+    width: 70%;
+}
+
+.skill-4{
+    background-color: peru;
+    width: 60%;
+}
+.skill-5{
+    background-color: navy;
+    width: 60%;
+}
+.skill-6{
+    background-color:maroon;
+    width: 50%;
+}
+.skill-7{
+    background-color: orangered;
+    width: 70%;
+}
+.skill-8{
+    background-color: green;
+    width: 60%;
+}
+.skill-9{
+    background-color: green;
+    width: 50%;
+}
+/* Media queries */
+/* @media only screen and (max-width: 999){
+    div.skills-levels{
+        margin-top: 15px;
+    }
+} */
