@@ -30,7 +30,7 @@
     padding: 2%;
     display: grid;
     grid-template-columns: repeat(auto-fit,minmax(30px,80px));
-    grid-template-rows: repeat(auto-fit,minmax(1fr,auto));
+    grid-template-rows: 1fr 1fr;
     align-content: space-between;
     justify-content: space-around;
     grid-gap: 10px;
