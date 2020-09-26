@@ -43,6 +43,7 @@ a{
   font-family: 'Times New Roman', Times, serif; 
   color: white;
 }
+
 /* Media Queries */
 @media screen and (max-width:800px){
   .navigation {
@@ -53,5 +54,30 @@ a{
     margin-top: 0;
     max-width: 100%;
     width: 100%;
+  }
+}
+
+@media screen and (max-width:700px){
+  .nav-link{
+    display: none;
+  }
+
+  .line{
+    width: 30px;
+    height: 3px;
+    background-color: white;
+    margin: 5px;
+  }
+
+  nav{
+    position: relative;
+  }
+
+  .hamburger{
+    position: absolute;
+    cursor: pointer;
+    right: 5%;
+    top: 50%;
+    transform: translate(-5%,-50%);
   }
 }
