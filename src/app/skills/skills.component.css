@@ -33,24 +33,21 @@
     grid-template-rows: repeat(auto-fit,minmax(1fr,auto));
     align-content: space-between;
     justify-content: space-around;
-    grid-gap: 2%;
+    grid-gap: 10px;
+    row-gap: 10px;
+    margin: 0;
 }
 
+/* makes background for skills white with rounded edges */
 .b1{
-    background-image: url("/assets/cards/white-button.svg");
-    background-position: 50%;
-    background-repeat: no-repeat;
-    background-size:contain;
-    width: 70px;
+    background-color: white;
+    border-radius: 15px;
 }
-
+/* makes background for skills red and text white with rounded edges */
 .b2{
-    background-image: url("/assets/cards/red-button.svg");
-    background-position: 50%;
+    background-color: #DB0101;
+    border-radius: 15px;
     color: white;
-    background-repeat: no-repeat;
-    background-size:contain;
-    width: 70px;
 }
 
 h1{
