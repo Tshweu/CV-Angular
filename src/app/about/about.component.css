@@ -1,3 +1,51 @@
+/* Heading  */
+.heading-grid{
+    display: grid;
+    grid-template-columns: 1fr 0.35fr 1fr 1fr;
+    grid-template-rows: repeat(3,1fr);   
+    min-height: 120px;
+    margin: 5% 0;
+    padding-top: 0;
+    /* position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%,-50%); */
+}
+#head-logo{
+    grid-column: 2;
+    grid-row: 1/4;
+    background: url(/assets/Logo-banner.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: 999999999999999999999999;
+}
+.line{
+    height: 4px;
+    width: 100%;
+    background-color: rgba(46,46,46,0.6);
+    outline-style: solid;
+    outline-width: 3px;
+    outline-color: white;
+}
+
+#line-1{
+    grid-column: 1;
+    grid-row: 2;
+    padding-top: 10px;
+}
+
+#line-2{
+    grid-column: 3/5;
+    grid-row: 2;
+    padding-top: 10px;
+}
+#header-text{
+    grid-column: 3;
+    justify-self: start;
+    align-self: end;
+    font-size: xx-large;
+}
+
 /* Paragraph color set to black
  * Font set to courier new
  */
@@ -15,7 +63,7 @@ div.container{
     text-align: center;
     width: 100vw;
     height: 100vh;
-    padding: 10%;
+    padding: 0%;
 }
 
 .centered{
