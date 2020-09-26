@@ -39,7 +39,7 @@
     grid-column: 3;
     justify-self: start;
     align-self: end;
-    font-size: xx-large;
+    font-size: x-large;
 }
 
 /* Paragraph color set to black
@@ -67,7 +67,7 @@ div.container{
 .centered{
     display: block;
     position: absolute;
-    top :80%;
+    top :85%;
     left:35%;
     width: 50%;
     transform: translate(-50%,-50%);
@@ -77,9 +77,9 @@ div.container{
 #pic{
     display: block;
     position: absolute;
-    width: 65%;
+    width: 60%;
     margin: auto;
-    top :62%;
+    top :65%;
     left:60%;
     transform: translate(-50%,-50%);
 }
@@ -146,6 +146,54 @@ div.container{
         width: 65%;
         margin: auto;
         top :45%;
+        left:50%;
+        transform: translate(-50%,-50%);
+    }
+}
+
+@media only screen and (max-width:480px){
+    .centered{
+        top :70%;
+        left:60%;
+        width: 100%;
+        margin: 0;
+        transform: translate(-50%,-50%);
+        max-width: 250px;
+    }
+
+    #pic{
+        width: 65%;
+        margin: auto;
+        top :38%;
+        left:50%;
+        transform: translate(-50%,-50%);
+    }
+
+    #head-logo{
+        grid-column: 2;
+        grid-row: 1/4;
+        background: url(/assets/Logo-banner-small.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+        z-index: 99;
+    }
+}
+
+@media only screen and (max-width:350px){
+    .centered{
+        top :60%;
+        left:62%;
+        width: 100%;
+        margin: 0;
+        transform: translate(-50%,-50%);
+        max-width: 250px;
+        overflow: scroll;
+    }
+
+    #pic{
+        width: 65%;
+        margin: auto;
+        top :30%;
         left:50%;
         transform: translate(-50%,-50%);
     }
