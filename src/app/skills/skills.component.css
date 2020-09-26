@@ -213,16 +213,13 @@ div.skills-levels{
         background-position: center;
     }
 
-    .heading-grid{
-        display: grid;
-        grid-template-columns: 1fr 0.1fr 1fr 1fr;
-        grid-template-rows: repeat(3,1fr);   
-        min-height: 40px;
+    .heading-grid{  
         margin-top: 15%;
+        padding-top: 20px;
     }
 }
 
-@media only screen and (max-width: 480){
+@media screen and (max-width: 480){
     /* div.skills-levels{
         margin-top: 15px;
     } */
@@ -233,7 +230,7 @@ div.skills-levels{
         background: url(/assets/Logo-banner-small.svg);
         background-repeat: no-repeat;
         background-position: center;
-        background-size: contain;
+        z-index: 99;
     }
 
     .heading-grid{
