@@ -27,4 +27,8 @@ export class NavigationBarComponent implements OnInit {
     }
     // this.isCollapsed = this.isCollapsed === 'navbar-menu' ?  : 'navbar-menu';
   }
+
+  doCollapse(){
+    this.strClass = 'navbar-menu'
+  }
 }
