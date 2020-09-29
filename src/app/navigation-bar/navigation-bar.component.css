@@ -20,6 +20,10 @@
 .nav-icon:hover ~ .navigation{
   transform: scaleX(1);
 }
+
+.navigation:hover{
+  transform: scaleX(1);
+}
 /*********************************************
   end round nav button attributes 
 *********************************************/
