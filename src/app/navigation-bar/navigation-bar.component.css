@@ -1,3 +1,40 @@
+/* Add animation (Chrome, Safari, Opera) */
+@-webkit-keyframes nav-slide {
+  from {right:-100px;opacity: 0;}
+  to {right:0px;opacity:1;}
+}
+
+/* Add animation (Standard syntax) */
+@keyframes nav-slide {
+  from {right:-100px;opacity: 0;}
+  to {right:0px;opacity:1;}
+}
+/*********************************************
+  start round nav button attributes 
+*********************************************/
+.nav-icon{
+  display: grid;
+  position: fixed;  
+  top: 20px;
+  right: 60px;
+  margin: 50px 0;
+  height: 60px;
+  width: 60px;
+  background-color:#DB0101;
+  border-radius: 100%;
+  float: right;
+  place-items: center;
+  z-index: 99;
+}
+
+.nav-icon:hover ~ .navigation{
+  display: unset;
+}
+/*********************************************
+  end round nav button attributes 
+*********************************************/
+
+
 /*  
  * removed margins
  * set text to upper case
@@ -15,29 +52,17 @@
 * 
 */
 .navigation {
+    display: none;
     position: fixed;  
-    top:5%;
-    right: 10%;
+    top:20px;
+    right: 80px;
     margin: 50px 0;
     max-width: 700px;
     background-color:rgba(46, 46, 46, 50%);
     float: right;
 }
 
-.nav-icon{
-  display: grid;
-  position: fixed;  
-  top: 5%;
-  right: 8%;
-  margin: 50px 0;
-  height: 60px;
-  width: 60px;
-  background-color:#DB0101;
-  border-radius: 100%;
-  float: right;
-  place-items: center;
-  z-index: 9999999999999;
-}
+
 
 .nav-icon .line{ 
     width: 20px;
@@ -46,9 +71,7 @@
     border-radius: 40%;
 }
 
-.nav-icon:hover ~ .navigation{
 
-}
 /*used both to ensure it works on both chrome and safari*/
 .nav-item:hover, a:hover{
   color: black;
