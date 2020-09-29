@@ -15,6 +15,7 @@
   float: right;
   place-items: center;
   z-index: 99;
+  cursor: pointer;
 }
 
 .nav-icon:hover ~ .navigation{
@@ -91,52 +92,27 @@ a{
   color: white;
 }
 
-/* Media Queries */
-@media screen and (max-width:800px){
-  .navigation {
-    position: fixed;  
-    top: 0px;
-    right: 0px;
-    padding: 0;
-    margin-top: 0;
-    max-width: 100%;
-    width: 100%;
-    /* overflow: hidden; */
-  }
-}
-
 @media screen and (max-width:700px){
-
-  .line{
-    width: 30px;
-    height: 3px;
-    background-color: white;
-    margin: 5px;
-  }
 
   nav{
     position: relative;
   }
 
-  .hamburger{
-    position: absolute;
-    cursor: pointer;
-    right: 5%;
-    top: 50%;
-    transform: translate(-5%,-50%);
+  .navigation{
+    transform: unset;
+    top: 8%;
+    right: 20%;
+
+    transition: transform 200ms ease-in-out;
+    transform-origin: top;
+    transform: scaleX(0);
   }
 
-  nav.navigation{
-    height: 50px;
-    margin: 0;
-    width: 100vw;
+  .nav-icon:hover ~ .navigation{
+    transform: scaleX(1);
   }
+
   .navbar-menu{
-    display: none;
-    pointer-events: none;  
-  }
-
-  .navbar-menu-open{
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(5,1fr);
@@ -145,17 +121,15 @@ a{
     height: 30vh;
     width: 30%;
 
-    background-color:rgba(46, 46, 46, 50%);
-
-    position: absolute;
-    top: 150%;
-    right: 5%;
-    transform: translate(0,-10%);
+    /* background-color:rgba(46, 46, 46, 50%); */
     
   }
   
   /* removes prior styling for horizontal menu */
-  .navigation ul {
+  ul{
+    display: none;
+  }
+  .navigation ul{
     margin: 0;
     padding: 5px;
     text-align: center;
