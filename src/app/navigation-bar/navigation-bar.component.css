@@ -16,12 +16,38 @@
 */
 .navigation {
     position: fixed;  
-    top: 8px;
-    right: 0px;
+    top:5%;
+    right: 10%;
     margin: 50px 0;
     max-width: 700px;
-    background-color:#2E2E2E;
+    background-color:rgba(46, 46, 46, 50%);
     float: right;
+}
+
+.nav-icon{
+  display: grid;
+  position: fixed;  
+  top: 5%;
+  right: 8%;
+  margin: 50px 0;
+  height: 60px;
+  width: 60px;
+  background-color:#DB0101;
+  border-radius: 100%;
+  float: right;
+  place-items: center;
+  z-index: 9999999999999;
+}
+
+.nav-icon .line{ 
+    width: 20px;
+    height: 3px;
+    background-color: white;
+    border-radius: 40%;
+}
+
+.nav-icon:hover ~ .navigation{
+
 }
 /*used both to ensure it works on both chrome and safari*/
 .nav-item:hover, a:hover{
@@ -84,11 +110,6 @@ a{
     margin: 0;
     width: 100vw;
   }
-
-  /* a.nav-link{
-    position: fixed;
-    height: 20px; 
-  } */
   .navbar-menu{
     display: none;
     pointer-events: none;  
@@ -111,22 +132,6 @@ a{
     transform: translate(0,-10%);
     
   }
-
-  /* .navigation:hover +.nav-menu{
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(5,1fr);
-
-    height: 30vh;
-    width: 30%;
-
-    background-color:rgba(46, 46, 46, 50%);
-
-    position: absolute;
-    top: 150%;
-    right: 5%;
-    transform: translate(0,-10%);
-  } */
   
   /* removes prior styling for horizontal menu */
   .navigation ul {

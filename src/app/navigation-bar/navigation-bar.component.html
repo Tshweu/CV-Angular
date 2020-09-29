@@ -1,3 +1,9 @@
+    <div class="nav-icon" (click)="checkCollapse()">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+    </div>
+
     <nav class="navigation">
         <!-- hamburger menu -->
         <div class="hamburger" (click)="checkCollapse()">
@@ -6,6 +12,7 @@
             <div class="line"></div>
         </div>
         <!-- Nav bar items -->
+        
         <ul class="{{ strClass }}">
             <li class="nav-item">
                 <a routerLink="/home" class="nav-link" (click)="doCollapse()">HOME</a>
