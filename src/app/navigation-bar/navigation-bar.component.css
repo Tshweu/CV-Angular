@@ -1,22 +1,12 @@
-/* Add animation (Chrome, Safari, Opera) */
-@-webkit-keyframes nav-slide {
-  from {right:-100px;opacity: 0;}
-  to {right:0px;opacity:1;}
-}
 
-/* Add animation (Standard syntax) */
-@keyframes nav-slide {
-  from {right:-100px;opacity: 0;}
-  to {right:0px;opacity:1;}
-}
 /*********************************************
   start round nav button attributes 
 *********************************************/
 .nav-icon{
   display: grid;
   position: fixed;  
-  top: 20px;
-  right: 60px;
+  top: 3%;
+  right: 8%;
   margin: 50px 0;
   height: 60px;
   width: 60px;
@@ -28,7 +18,7 @@
 }
 
 .nav-icon:hover ~ .navigation{
-  display: unset;
+  transform: scaleX(1);
 }
 /*********************************************
   end round nav button attributes 
@@ -52,14 +42,18 @@
 * 
 */
 .navigation {
-    display: none;
     position: fixed;  
-    top:20px;
-    right: 80px;
+    top:3%;
+    right:10%;
     margin: 50px 0;
     max-width: 700px;
     background-color:rgba(46, 46, 46, 50%);
     float: right;
+
+    /* animation */
+    transition: transform 200ms ease-in-out;
+    transform-origin: right;
+    transform: scaleX(0);
 }
 
 
