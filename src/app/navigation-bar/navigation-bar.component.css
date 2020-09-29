@@ -20,11 +20,20 @@
 
 .nav-icon:hover ~ .navigation{
   transform: scaleX(1);
-}
+} 
 
 .navigation:hover{
   transform: scaleX(1);
 }
+
+.nav-toggle:checked ~ .navigation{
+  transform: scaleX(1);
+}
+
+.nav-toggle{
+  display: none;
+}
+
 /*********************************************
   end round nav button attributes 
 *********************************************/
@@ -65,7 +74,7 @@
 
 .nav-icon .line{ 
     width: 20px;
-    height: 3px;
+    height: 4px;
     background-color: white;
     border-radius: 40%;
 }
@@ -105,11 +114,13 @@ a{
 
     transition: transform 200ms ease-in-out;
     transform-origin: top;
-    transform: scaleX(0);
+    transform: scaleY(0);
   }
-
+  .nav-toggle:checked ~ .navigation{
+    transform: scaleY(1);
+  }
   .nav-icon:hover ~ .navigation{
-    transform: scaleX(1);
+    transform: scaleY(1);
   }
 
   .navbar-menu{
@@ -117,11 +128,8 @@ a{
     grid-template-columns: 1fr;
     grid-template-rows: repeat(5,1fr);
 
-    
     height: 30vh;
     width: 30%;
-
-    /* background-color:rgba(46, 46, 46, 50%); */
     
   }
   
