@@ -18,17 +18,19 @@
   cursor: pointer;
 }
 
+.nav-toggle:checked ~ .navigation{
+  transform: scaleX(1);
+}
+
 .nav-icon:hover ~ .navigation{
   transform: scaleX(1);
 } 
 
-.navigation:hover{
-  transform: scaleX(1);
+#ntl:hover{
+  transform: unset;
 }
 
-.nav-toggle:checked ~ .navigation{
-  transform: scaleX(1);
-}
+
 
 .nav-toggle{
   display: none;
@@ -119,9 +121,9 @@ a{
   .nav-toggle:checked ~ .navigation{
     transform: scaleY(1);
   }
-  .nav-icon:hover ~ .navigation{
-    transform: scaleY(1);
-  }
+  /* .nav-icon:hover ~ .navigation{
+    
+  } */
 
   .navbar-menu{
     display: grid;
