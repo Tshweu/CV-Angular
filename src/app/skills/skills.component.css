@@ -35,23 +35,27 @@ div.grid{
     border-style: solid;
 }
 
-/* BUTTONS */
+/* BUTTONS 
+* using flex layout to automatically align them
+*/
 .buttons{
     padding: 2%;
-    display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(30px,80px));
-    grid-template-rows: 1fr 1fr;
-    align-content: space-between;
-    justify-content: space-around;
-    grid-gap: 10px;
-    row-gap: 10px;
-    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.b1,.b2{
+    flex: 1 1 100px; /*stretch to max 100 px*/
+    flex: 0 1 100px; /*don't strech if it goes to next line*/
+    margin: 5px;
 }
 
 /* makes background for skills white with rounded edges */
 .b1{
     background-color: rgba(46,46,46,0.4);
     border-radius: 15px;
+    color:rgba(46,46,46,0.6);
 }
 /* makes background for skills red and text white with rounded edges */
 .b2{
