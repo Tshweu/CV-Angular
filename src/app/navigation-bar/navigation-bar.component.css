@@ -25,16 +25,13 @@
 .nav-icon:hover ~ .navigation{
   transform: scaleX(1);
 } 
-.nav-icon:hover.navbar-menu{
+.navigation ul.navbar-menu:hover{
   transform: scaleX(1);
 }
  
-#ntl:hover{
+/* #ntl:hover{
   transform: unset;
-}
-
-
-
+} */
 .nav-toggle{
   display: none;
 } 
@@ -81,7 +78,7 @@
     width: 20px;
     height: 4px;
     background-color: white;
-    border-radius: 40%;
+    border-radius: 20%;
 }
 
 
@@ -106,7 +103,7 @@ a{
   color: white;
 }
 
-@media screen and (max-width:700px){
+/* @media screen and (max-width:700px){
 
   nav{
     position: relative;
@@ -124,9 +121,9 @@ a{
   .nav-toggle:checked ~ .navigation{
     transform: scaleY(1);
   }
-  /* .nav-icon:hover ~ .navigation{
+ .nav-icon:hover ~ .navigation{
     
-  } */
+  } 
 
   .navbar-menu{
     display: grid;
@@ -138,7 +135,7 @@ a{
     
   }
   
-  /* removes prior styling for horizontal menu */
+   removes prior styling for horizontal menu 
   ul{
     display: none;
   }
@@ -149,4 +146,59 @@ a{
     width: fit-content;
     height: fit-content;
   }
+}*/
+
+@media screen and (max-width:700px){
+  .navigation{
+    display: none;
+  }
+  
+  .nav-toggle:checked ~ .navigation-small{
+    transform: scaleY(1);
+  }
+/*  
+ * removed margins
+ * set text to upper case
+*/
+    .navigation-small ul {
+      margin: 0;
+      padding: 15px 70px;
+    }
+    /* Putting all the nav items in a single line */
+    .navigation-small li {
+      display: inline-block;
+    }
+    /* Align Nav bar to the right of the page 
+    * 
+    */
+    .navigation-small {
+        position: fixed;  
+        top:15%;
+        right:14%;
+        margin:0;
+        max-width:200px;
+        background-color:rgba(46, 46, 46, 50%);
+
+        /* animation */
+        transition: transform 200ms ease-in-out;
+        transform-origin: right;
+        transform: scaleX(0);
+    }
+
+    .navbar-menu{
+      display: grid;
+      position: relative;
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(5,1fr);
+      height: 30vh;
+      width: 30%;
+    }
+
+    .navigation-small ul{
+      margin: 0;
+      padding: 5px;
+      text-align: center;
+      width: fit-content;
+      height: fit-content;
+    }
 }
