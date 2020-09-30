@@ -39,18 +39,15 @@
 }
 /* Grid for portfolio cards */
 .container{
-    display: grid;
-    grid-template-columns: repeat(auto-fill,minmax(190px,350px));
-    grid-template-rows: repeat(auto-fill,minmax(350px,auto));
+    display: flex;
+    flex-wrap: wrap;
     margin: auto;
-    height: 160vh;
-    margin-bottom: 20%;
-    align-content: space-between;
     justify-content: space-around;
-    row-gap: 20px;
 }
 /* Card details for portfolio */
 .card{
+    flex: 1 1 400px;
+    flex: 0 1 400px;
     background: grey;
     width: 100%;
     height: 100%;
