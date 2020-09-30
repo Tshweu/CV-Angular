@@ -11,10 +11,10 @@
   height: 60px;
   width: 60px;
   background-color:#DB0101;
-  border-radius: 100%;
+  border-radius: 15%;
   float: right;
   place-items: center;
-  z-index: 99;
+  z-index: 9999999;
   cursor: pointer;
 }
 
@@ -25,7 +25,10 @@
 .nav-icon:hover ~ .navigation{
   transform: scaleX(1);
 } 
-
+.nav-icon:hover.navbar-menu{
+  transform: scaleX(1);
+}
+ 
 #ntl:hover{
   transform: unset;
 }
@@ -34,7 +37,7 @@
 
 .nav-toggle{
   display: none;
-}
+} 
 
 /*********************************************
   end round nav button attributes 
