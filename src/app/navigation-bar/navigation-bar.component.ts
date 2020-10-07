@@ -14,7 +14,8 @@ export class NavigationBarComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
-    this.menuClass = 'menu-btn'
+    this.menuClass = 'menu-btn';
+    this.menuBar = 'menu-bar';
   }
   //
   // checkCollapse(){
