@@ -8,12 +8,12 @@ import { Component, OnInit } from '@angular/core';
 export class NavigationBarComponent implements OnInit {
 
   isCollapsed: any = 'true';
-  strClass:any = ""
+  menuClass:any = ""
 
   constructor() { }
 
   ngOnInit(): void {
-    this.strClass = 'menu-btn'
+    this.menuClass = 'menu-btn'
   }
   //
   // checkCollapse(){
@@ -34,10 +34,10 @@ export class NavigationBarComponent implements OnInit {
 
   checkOnClick(){
     if(this.isCollapsed){
-      this.strClass = 'menu-btn open'
+      this.menuClass = 'menu-btn open'
       this.isCollapsed = false;
     }else{
-      this.strClass = 'menu-btn'
+      this.menuClass = 'menu-btn'
       this.isCollapsed = true;
     }
   }
