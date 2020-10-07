@@ -13,22 +13,32 @@ export class NavigationBarComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
-    this.strClass = 'navbar-menu'
+    this.strClass = 'menu-btn'
   }
   //
-  checkCollapse(){
-    if(this.isCollapsed)
-    {
-      this.strClass = 'navbar-menu'+'-'+ 'open';
-      this.isCollapsed = false;
-    }else{
-      this.strClass = 'navbar-menu';
-      this.isCollapsed = true;
-    }
-    // this.isCollapsed = this.isCollapsed === 'navbar-menu' ?  : 'navbar-menu';
-  }
+  // checkCollapse(){
+  //   if(this.isCollapsed)
+  //   {
+  //     this.strClass = 'navbar-menu'+'-'+ 'open';
+  //     this.isCollapsed = false;
+  //   }else{
+  //     this.strClass = 'navbar-menu';
+  //     this.isCollapsed = true;
+  //   }
+  //   // this.isCollapsed = this.isCollapsed === 'navbar-menu' ?  : 'navbar-menu';
+  // }
 
   doCollapse(){
     this.strClass = 'navbar-menu'
+  }
+
+  checkOnClick(){
+    if(this.isCollapsed){
+      this.strClass = 'menu-btn open'
+      this.isCollapsed = false;
+    }else{
+      this.strClass = 'menu-btn'
+      this.isCollapsed = true;
+    }
   }
 }
