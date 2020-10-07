@@ -1,10 +1,18 @@
 <nav class="navigation">
 
         <!-- hamburger menu -->
-        <div class="{{ strClass }}" (click)="checkOnClick()">
+        <div class="{{ menuClass }}" (click)="checkOnClick()">
             <div class="menu-line"></div>
         </div>
         <!-- Nav bar items -->
+        <div class="{{ menuBar }}">
+            <div class="menu-item"><a routerLink="/">HOME</a></div>
+            <div class="menu-item"><a routerLink="/">ABOUT</a></div>
+            <div class="menu-item"><a routerLink="/">SKILLS</a></div>
+            <div class="menu-item"><a routerLink="/">PORTFOLIO</a></div>
+            <div class="menu-item"><a routerLink="/">CONTACT</a></div>
+        </div>
+
         <!-- <ul class="{{ strClass }}">
             <li class="nav-item">
                 <a routerLink="/home" class="nav-link" (click)="doCollapse()">HOME</a>
