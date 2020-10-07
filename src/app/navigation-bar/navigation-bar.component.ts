@@ -8,7 +8,8 @@ import { Component, OnInit } from '@angular/core';
 export class NavigationBarComponent implements OnInit {
 
   isCollapsed: any = 'true';
-  menuClass:any = ""
+  menuClass:any = "";
+  menuBar:any="";
 
   constructor() { }
 
@@ -29,7 +30,7 @@ export class NavigationBarComponent implements OnInit {
   // }
 
   doCollapse(){
-    this.strClass = 'navbar-menu'
+    this.menuClass = 'navbar-menu'
   }
 
   checkOnClick(){
