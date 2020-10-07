@@ -1,3 +1,46 @@
+
+/*********************************************
+  start round nav button attributes 
+*********************************************/
+.nav-icon{
+  display: grid;
+  position: fixed;  
+  top: 3%;
+  right: 8%;
+  margin: 50px 0;
+  height: 60px;
+  width: 60px;
+  background-color:#DB0101;
+  border-radius: 15%;
+  float: right;
+  place-items: center;
+  z-index: 9999999;
+  cursor: pointer;
+}
+
+.nav-toggle:checked ~ .navigation{
+  transform: scaleX(1);
+}
+
+.nav-icon:hover ~ .navigation{
+  transform: scaleX(1);
+} 
+.navigation ul.navbar-menu:hover{
+  transform: scaleX(1);
+}
+ 
+/* #ntl:hover{
+  transform: unset;
+} */
+.nav-toggle{
+  display: none;
+} 
+
+/*********************************************
+  end round nav button attributes 
+*********************************************/
+
+
 /*  
  * removed margins
  * set text to upper case
@@ -16,13 +59,29 @@
 */
 .navigation {
     position: fixed;  
-    top: 8px;
-    right: 0px;
+    top:3%;
+    right:10%;
     margin: 50px 0;
     max-width: 700px;
-    background-color:#2E2E2E;
+    background-color:rgba(46, 46, 46, 50%);
     float: right;
+
+    /* animation */
+    transition: transform 200ms ease-in-out;
+    transform-origin: right;
+    transform: scaleX(0);
 }
+
+
+
+.nav-icon .line{ 
+    width: 20px;
+    height: 4px;
+    background-color: white;
+    border-radius: 20%;
+}
+
+
 /*used both to ensure it works on both chrome and safari*/
 .nav-item:hover, a:hover{
   color: black;
@@ -44,96 +103,102 @@ a{
   color: white;
 }
 
-/* Media Queries */
-@media screen and (max-width:800px){
-  .navigation {
-    position: fixed;  
-    top: 0px;
-    right: 0px;
-    padding: 0;
-    margin-top: 0;
-    max-width: 100%;
-    width: 100%;
-    /* overflow: hidden; */
-  }
-}
-
-@media screen and (max-width:700px){
-
-  .line{
-    width: 30px;
-    height: 3px;
-    background-color: white;
-    margin: 5px;
-  }
+/* @media screen and (max-width:700px){
 
   nav{
     position: relative;
   }
 
-  .hamburger{
-    position: absolute;
-    cursor: pointer;
-    right: 5%;
-    top: 50%;
-    transform: translate(-5%,-50%);
-  }
+  .navigation{
+    transform: unset;
+    top: 8%;
+    right: 20%;
 
-  nav.navigation{
-    height: 50px;
-    margin: 0;
-    width: 100vw;
+    transition: transform 200ms ease-in-out;
+    transform-origin: top;
+    transform: scaleY(0);
   }
+  .nav-toggle:checked ~ .navigation{
+    transform: scaleY(1);
+  }
+ .nav-icon:hover ~ .navigation{
+    
+  } 
 
-  /* a.nav-link{
-    position: fixed;
-    height: 20px; 
-  } */
   .navbar-menu{
-    display: none;
-    pointer-events: none;  
-  }
-
-  .navbar-menu-open{
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(5,1fr);
-
-    
-    height: 30vh;
-    width: 30%;
-
-    background-color:rgba(46, 46, 46, 50%);
-
-    position: absolute;
-    top: 150%;
-    right: 5%;
-    transform: translate(0,-10%);
-    
-  }
-
-  /* .navigation:hover +.nav-menu{
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(5,1fr);
 
     height: 30vh;
     width: 30%;
-
-    background-color:rgba(46, 46, 46, 50%);
-
-    position: absolute;
-    top: 150%;
-    right: 5%;
-    transform: translate(0,-10%);
-  } */
+    
+  }
   
-  /* removes prior styling for horizontal menu */
-  .navigation ul {
+   removes prior styling for horizontal menu 
+  ul{
+    display: none;
+  }
+  .navigation ul{
     margin: 0;
     padding: 5px;
     text-align: center;
     width: fit-content;
     height: fit-content;
   }
+}*/
+
+@media screen and (max-width:700px){
+  .navigation{
+    display: none;
+  }
+  
+  .nav-toggle:checked ~ .navigation-small{
+    transform: scaleY(1);
+  }
+/*  
+ * removed margins
+ * set text to upper case
+*/
+    .navigation-small ul {
+      margin: 0;
+      padding: 15px 70px;
+    }
+    /* Putting all the nav items in a single line */
+    .navigation-small li {
+      display: inline-block;
+    }
+    /* Align Nav bar to the right of the page 
+    * 
+    */
+    .navigation-small {
+        position: fixed;  
+        top:15%;
+        right:14%;
+        margin:0;
+        max-width:200px;
+        background-color:rgba(46, 46, 46, 50%);
+
+        /* animation */
+        transition: transform 200ms ease-in-out;
+        transform-origin: right;
+        transform: scaleX(0);
+    }
+
+    .navbar-menu{
+      display: grid;
+      position: relative;
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(5,1fr);
+      height: 30vh;
+      width: 30%;
+    }
+
+    .navigation-small ul{
+      margin: 0;
+      padding: 5px;
+      text-align: center;
+      width: fit-content;
+      height: fit-content;
+    }
 }

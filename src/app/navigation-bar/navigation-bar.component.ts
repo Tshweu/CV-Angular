@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ElementRef } from '@angular/core';
 
 @Component({
   selector: 'app-navigation-bar',
@@ -7,28 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NavigationBarComponent implements OnInit {
 
-  isCollapsed: any = 'true';
-  strClass:any = ""
-
-  constructor() { }
-
   ngOnInit(): void {
-    this.strClass = 'navbar-menu'
   }
   //
-  checkCollapse(){
-    if(this.isCollapsed)
-    {
-      this.strClass = 'navbar-menu'+'-'+ 'open';
-      this.isCollapsed = false;
-    }else{
-      this.strClass = 'navbar-menu';
-      this.isCollapsed = true;
-    }
-    // this.isCollapsed = this.isCollapsed === 'navbar-menu' ?  : 'navbar-menu';
-  }
-
-  doCollapse(){
-    this.strClass = 'navbar-menu'
-  }
 }

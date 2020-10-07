@@ -1,26 +1,49 @@
+            <input type="checkbox" id="nav-toggle" class="nav-toggle">
+            <label for="nav-toggle" class="nav-toggle-label nav-icon" 
+            id="ntl">
+                <span class="line"></span>
+                <span class="line"></span>
+                <span class="line"></span>
+            </label>
+              
+
     <nav class="navigation">
-        <!-- hamburger menu -->
-        <div class="hamburger" (click)="checkCollapse()">
-            <div class="line"></div>
-            <div class="line"></div>
-            <div class="line"></div>
-        </div>
         <!-- Nav bar items -->
-        <ul class="{{ strClass }}">
+        <ul class="navbar-menu">
             <li class="nav-item">
-                <a routerLink="/home" class="nav-link" (click)="doCollapse()">HOME</a>
+                <a routerLink="/home" class="nav-link">HOME</a>
             </li>
             <li class="nav-item">
-                <a routerLink="/about" class="nav-link" (click)="doCollapse()">ABOUT</a>
+                <a routerLink="/about" class="nav-link">ABOUT</a>
             </li>
             <li class="nav-item">
-                <a routerLink="/skills" class="nav-link" (click)="doCollapse()">SKILLS</a>
+                <a routerLink="/skills" class="nav-link" >SKILLS</a>
             </li>
             <li class="nav-item">
-                <a routerLink="/portfolio" class="nav-link" (click)="doCollapse()">PORTFOLIO</a>
+                <a routerLink="/portfolio" class="nav-link" >PORTFOLIO</a>
             </li>
             <li class="nav-item">
-                <a routerLink="/contact" class="nav-link" (click)="doCollapse()">CONTACT</a>
+                <a routerLink="/contact" class="nav-link" >CONTACT</a>
             </li>
         </ul>
+    </nav>
+    <nav class="navigation-small">
+            <!-- Nav bar items -->
+            <ul class="navbar-menu">
+                <li class="nav-item">
+                    <a routerLink="/home" class="nav-link">HOME</a>
+                </li>
+                <li class="nav-item">
+                    <a routerLink="/about" class="nav-link">ABOUT</a>
+                </li>
+                <li class="nav-item">
+                    <a routerLink="/skills" class="nav-link" >SKILLS</a>
+                </li>
+                <li class="nav-item">
+                    <a routerLink="/portfolio" class="nav-link" >PORTFOLIO</a>
+                </li>
+                <li class="nav-item">
+                    <a routerLink="/contact" class="nav-link" >CONTACT</a>
+                </li>
+            </ul>
     </nav>

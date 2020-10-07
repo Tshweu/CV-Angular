@@ -1,9 +1,8 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="143" height="106.422" viewBox="0 0 143 106.422">
-  <g id="front-end-icon" transform="translate(-800.096 -2923.058)">
-    <path id="Path_54" data-name="Path 54" d="M97.641,2H1V77.2H43.181V89.6l-11.432,6.4H66.892l-9.947-6.4V77.2h40.7ZM88.856,69.585H9.786V11.4h79.07Z" transform="translate(843.955 2922.558)" fill="#fff" stroke="#000" stroke-width="3"/>
-    <rect id="Rectangle_28" data-name="Rectangle 28" width="36.782" height="67.501" transform="translate(838.694 2957.138)"/>
-    <g id="phonelink-24px_1_" data-name="phonelink-24px (1)" transform="translate(801.596 2945.09)">
-      <path id="Path_56" data-name="Path 56" d="M11.724,12.289H64.484V4H5.862V57.878H0V70.312H41.035V57.878H11.724Zm58.621,8.289H46.9V70.312H70.346Zm-5.862,37.3H52.759V28.867H64.484Z" transform="translate(0 12.578)" fill="#fff" stroke="#000" stroke-width="3"/>
+<svg xmlns="http://www.w3.org/2000/svg" width="140.001" height="100" viewBox="0 0 140.001 100">
+  <g id="front-end-icon" transform="translate(-801.596 -2924.558)">
+    <path id="Subtraction_10" data-name="Subtraction 10" d="M-2634.847-13999.105h-35.142l11.432-6.191v-11.987h-11.662v-7.366h57.335v-56.26h-79.068v22.412h-8.787v-31.5h96.642v72.717h-40.7v11.987l9.944,6.189Z" transform="translate(3545.694 17014.559)" fill="rgba(112,112,112,0.6)"/>
+    <g id="phonelink-24px_1_" data-name="phonelink-24px (1)" transform="translate(801.596 2960.44)">
+      <path id="Path_56" data-name="Path 56" d="M11.724,12.015H64.484V4H5.862V56.1H0V68.118H41.035V56.1H11.724Zm58.621,8.015H46.9V68.118H70.346ZM64.484,56.1H52.759V28.044H64.484Z" transform="translate(0 -4)" fill="#707070"/>
     </g>
   </g>
 </svg>
