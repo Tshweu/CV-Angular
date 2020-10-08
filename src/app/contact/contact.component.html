@@ -6,25 +6,28 @@
         <div id="line-2"><div class="line"></div></div>
     </div>   
 </div>
-<form #userForm="ngForm" action="">
+<form #userForm="ngForm" (ngSubmit)="onSubmit" novalidate>
   <div class="form-group">
     <label for="">Name</label>
-    <input type="text" name="name" id="">
+    <input type="text" name="name" id="" [(ngModel)]="userModel.name">
   </div>
   <div class="form-group">
     <label for="">Phone Number</label>
-    <input type="text" name="phone" id="">
+    <input type="text" name="phone" id="" [(ngModel)]="userModel.phone">
   </div>
   <div class="form-group">
     <label for="">Email</label>
-    <input type="text" name="email" id="">
+    <input type="text" name="email" id="" [(ngModel)]="userModel.email"">
   </div>
   <div class="form-group">
     <label for="">Subject</label>
-    <input type="text" name="subject" id="">
+    <input type="text" name="subject" id="" [(ngModel)]="userModel.subject">
   </div>
   <div class="form-group">
     <label for="">Message</label>
-    <textarea rows="5" name="message" id=""></textarea>
+    <textarea rows="5" name="message" id="" [(ngModel)]="userModel.message"></textarea>
+  </div>
+  <div class="form-group">
+    <button type="submit"></button>
   </div>
 </form>
