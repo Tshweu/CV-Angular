@@ -6,11 +6,11 @@
         </div>
         <!-- Nav bar items -->
         <div class="{{ menuBar }}">
-            <div class="menu-item"><a routerLink="/"><span>HOME</span></a></div>
-            <div class="menu-item"><a routerLink="/about">ABOUT</a></div>
-            <div class="menu-item"><a routerLink="/skills">SKILLS</a></div>
-            <div class="menu-item"><a routerLink="/portfolio">PORTFOLIO</a></div>
-            <div class="menu-item"><a routerLink="/contact">CONTACT</a></div>
+            <div class="menu-item"><a routerLink="/" (click)="checkOnClick()">HOME</a></div>
+            <div class="menu-item"><a routerLink="/about" (click)="checkOnClick()">ABOUT</a></div>
+            <div class="menu-item"><a routerLink="/skills" (click)="checkOnClick()">SKILLS</a></div>
+            <div class="menu-item"><a routerLink="/portfolio" (click)="checkOnClick()">PORTFOLIO</a></div>
+            <div class="menu-item"><a routerLink="/contact" (click)="checkOnClick()">CONTACT</a></div>
         </div>
 
 </nav>
