@@ -110,6 +110,7 @@ a:hover{
     padding: 18px 22px 18px 18px;
 
     background-color:rgba(46, 46, 46, 50%);
+    border-radius: 10px;
     grid-template-columns: repeat(5,auto);
     column-gap: 35px;
 
@@ -137,3 +138,11 @@ a:hover{
 /*******************************
   menu bar end
 ********************************/ 
+@media(max-width:680px){
+  .menu-bar{
+    display: grid;
+    top: 40px;
+    row-gap: 10px;
+    grid-template-columns: repeat(1,auto);
+  }
+}
