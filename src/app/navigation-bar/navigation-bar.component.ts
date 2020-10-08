@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NavigationBarComponent implements OnInit {
 
-  isCollapsed: any = 'true';
+  isCollapsed: any = true;
   menuClass:any = "";
   menuBar:any="";
   isMenuCollapsed = true;
@@ -24,20 +24,12 @@ export class NavigationBarComponent implements OnInit {
       this.menuClass = 'menu-btn open';
       this.menuBar = 'menu-bar';
       this.isCollapsed = false;
+      this.isMenuCollapsed = false;
     }else{
       this.menuClass = 'menu-btn';
       this.menuBar = 'mb-close';
       this.isCollapsed = true;
-    }
-  }
-
-  checkMenuClick(){
-    if(this.isMenuCollapsed){
-      this.menuBar = 'menu-bar open';
-      this.isMenuCollapsed = false;
-    }else{
-      this.menuBar = 'menu-bar';
-      this.isCollapsed = true;
+      this.isMenuCollapsed = true;
     }
   }
 }
