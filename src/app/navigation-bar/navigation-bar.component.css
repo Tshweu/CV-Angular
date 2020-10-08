@@ -1,204 +1,148 @@
-
-/*********************************************
-  start round nav button attributes 
-*********************************************/
-.nav-icon{
-  display: grid;
-  position: fixed;  
-  top: 3%;
-  right: 8%;
-  margin: 50px 0;
-  height: 60px;
-  width: 60px;
-  background-color:#DB0101;
-  border-radius: 15%;
-  float: right;
-  place-items: center;
-  z-index: 9999999;
-  cursor: pointer;
+@keyframes menu-slide {
+  0%{opacity: 0;transform: scaleX(0);}
+  50%{opacity: 0.4;right: -770px;};
+  100%{opacity: 1;transition:transform 100ms ease-in-out;transform: scaleX(1);transform-origin: right;right: 52px;}
 }
 
-.nav-toggle:checked ~ .navigation{
-  transform: scaleX(1);
+@keyframes menu-slide-out {
+  0%{opacity: 1;transform: scaleX(1);}
+  50%{opacity: 0.4;right:52px;}
+  100%{opacity: 0;transition:transform 100ms ease-in-out;transform: scaleX(0);transform-origin: right;}
 }
 
-.nav-icon:hover ~ .navigation{
-  transform: scaleX(1);
-} 
-.navigation ul.navbar-menu:hover{
-  transform: scaleX(1);
+*{
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
 }
- 
-/* #ntl:hover{
-  transform: unset;
-} */
-.nav-toggle{
-  display: none;
-} 
-
-/*********************************************
-  end round nav button attributes 
-*********************************************/
-
-
-/*  
- * removed margins
- * set text to upper case
-*/
-.navigation ul {
-  margin: 0;
-  padding: 15px 70px;
-  text-transform: uppercase;
-}
-/* Putting all the nav items in a single line */
-.navigation li {
-  display: inline-block;
-}
-/* Align Nav bar to the right of the page 
-* 
-*/
-.navigation {
-    position: fixed;  
-    top:3%;
-    right:10%;
-    margin: 50px 0;
-    max-width: 700px;
-    background-color:rgba(46, 46, 46, 50%);
-    float: right;
-
-    /* animation */
-    transition: transform 200ms ease-in-out;
-    transform-origin: right;
-    transform: scaleX(0);
+a{
+  all:unset;
+  color: white;
 }
 
-
-
-.nav-icon .line{ 
-    width: 20px;
-    height: 4px;
-    background-color: white;
-    border-radius: 20%;
-}
-
-
-/*used both to ensure it works on both chrome and safari*/
-.nav-item:hover, a:hover{
+a:hover{
   color: black;
 }
 
-.navbar-menu{
+.navigation{
+  position: fixed;
+  top: 10%;
+  right: 10%;
+  height: 60px;
+  width: 700px;
+}
+ /*******************************
+  menu button start
+  ********************************/ 
+.menu-btn{
+  position: absolute;
   display: flex;
-  color: white;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  height: 60px;
+  top: 0;
+  right: 0;
+  cursor: pointer;
+  transition: all 500ms ease-in-out;
+  background-color: red;
+  border-radius: 10px;
+
+  z-index: 9;
 }
-/* Removed all default attributes from ancher tags
-*  fixed spacing with padding
-* set font to times and color to white
-*/
-a{
-  all:unset;
-  padding: 15px;
-  font-size: 20px;
-  font-family: 'Times New Roman', Times, serif; 
-  color: white;
+
+.menu-line{
+  width: 35px;
+  height: 4px;
+  background: white;
+  border-radius: 5px;
+  transition: all 500ms ease-in-out;
+}
+ /*******************************
+  sudo elements for top and bottom lines on burger menu
+  ********************************/ 
+.menu-line::before,
+.menu-line::after{
+  content: '';
+  position: absolute;
+  width: 35px;
+  height: 4px;
+  background: white;
+  border-radius: 5px;
+  transition: all 500ms ease-in-out;
 }
 
-/* @media screen and (max-width:700px){
+.menu-line::before{
+  transform: translateY(-16px);
+}
 
-  nav{
-    position: relative;
-  }
+.menu-line::after{
+  transform: translateY(16px);
+}
+ /*******************************
+  animation for click
+  ********************************/ 
+.menu-btn.open .menu-line{
+  transform: translateX(-50px);
+  background: transparent;
+}
 
-  .navigation{
-    transform: unset;
-    top: 8%;
-    right: 20%;
+.menu-btn.open .menu-line::before{
+  transform: rotate(45deg) translate(35px,-35px);
+}
 
-    transition: transform 200ms ease-in-out;
-    transform-origin: top;
-    transform: scaleY(0);
-  }
-  .nav-toggle:checked ~ .navigation{
-    transform: scaleY(1);
-  }
- .nav-icon:hover ~ .navigation{
-    
-  } 
+.menu-btn.open .menu-line::after{
+  transform: rotate(-45deg) translate(35px,35px);
+}
+/*******************************
+  menu button end
+********************************/ 
 
-  .navbar-menu{
+/*******************************
+  menu bar start
+********************************/ 
+  .menu-bar{
     display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(5,1fr);
+    position: absolute;
 
-    height: 30vh;
-    width: 30%;
-    
-  }
-  
-   removes prior styling for horizontal menu 
-  ul{
-    display: none;
-  }
-  .navigation ul{
-    margin: 0;
-    padding: 5px;
-    text-align: center;
-    width: fit-content;
-    height: fit-content;
-  }
-}*/
+    top: 0;
+    right: 52px;
+    padding: 18px 22px 18px 18px;
 
-@media screen and (max-width:700px){
-  .navigation{
-    display: none;
+    background-color:rgba(46, 46, 46, 50%);
+    border-radius: 10px;
+    grid-template-columns: repeat(5,auto);
+    column-gap: 35px;
+
+     /* animation */
+     animation: menu-slide 350ms ease-in-out;
+     /* transition: animation 200ms ease-in-out;    */
+
   }
-  
-  .nav-toggle:checked ~ .navigation-small{
-    transform: scaleY(1);
+
+
+  .mb-close{
+     opacity: 0;
+    /* transform: opacity(0);
+    transition: transform 100ms ease-out; 
+     opacity: 1;
+    transform: translateX(52px); 
+    transform-origin: right;   */
   }
-/*  
- * removed margins
- * set text to upper case
-*/
-    .navigation-small ul {
-      margin: 0;
-      padding: 15px 70px;
-    }
-    /* Putting all the nav items in a single line */
-    .navigation-small li {
-      display: inline-block;
-    }
-    /* Align Nav bar to the right of the page 
-    * 
-    */
-    .navigation-small {
-        position: fixed;  
-        top:15%;
-        right:14%;
-        margin:0;
-        max-width:200px;
-        background-color:rgba(46, 46, 46, 50%);
 
-        /* animation */
-        transition: transform 200ms ease-in-out;
-        transform-origin: right;
-        transform: scaleX(0);
-    }
-
-    .navbar-menu{
-      display: grid;
-      position: relative;
-      grid-template-columns: 1fr;
-      grid-template-rows: repeat(5,1fr);
-      height: 30vh;
-      width: 30%;
-    }
-
-    .navigation-small ul{
-      margin: 0;
-      padding: 5px;
-      text-align: center;
-      width: fit-content;
-      height: fit-content;
-    }
+  .menu-item{
+    margin-left: auto;
+    margin-right: auto;
+    cursor: pointer;
+  }
+/*******************************
+  menu bar end
+********************************/ 
+@media(max-width:680px){
+  .menu-bar{
+    display: grid;
+    top: 40px;
+    row-gap: 10px;
+    grid-template-columns: repeat(1,auto);
+  }
 }
