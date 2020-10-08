@@ -149,9 +149,12 @@ div.skills-levels{
 
 .card-text{
     display: grid;
-    grid-template-columns: minmax(50px,200px) minmax(250px,700px);
+    grid-template-columns: minmax(120px,200px) minmax(200px,700px);
+    grid-template-rows: 22px;
     column-gap: 10px;
     position: absolute;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
     top: 40%;
     left: 40%;
     transform: translate(-50%,-50%);
@@ -236,11 +239,38 @@ div.skills-levels{
     }
 }
 
-@media screen and (max-width: 480){
+@media screen and (max-width:700px){
+    .card-text{
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        grid-template-columns: minmax(120px,200px) minmax(200px,700px);
+
+    }
+    
+}
+
+@media screen and (max-width: 500px){
     /* div.skills-levels{
         margin-top: 15px;
     } */
+    .card-text{
+        top: 50%;
+        left: 40%;
+        grid-column: 0;
+        transform: translate(-50%,-50%);
+        grid-template-columns: minmax(120px,200px) minmax(100px,700px);
 
+    }
+    
+    div.skills-levels{
+       
+        width: 100vw;
+        
+    }
+    .prog{
+        width: 100px;
+    }
     #head-logo{
         grid-column: 2;
         grid-row: 1/4;
@@ -250,11 +280,4 @@ div.skills-levels{
         z-index: 99;
     }
 
-    .heading-grid{
-        display: grid;
-        grid-template-columns: 1fr 0.05fr 1fr 1fr;
-        grid-template-rows: repeat(3,1fr);   
-        max-width: 70px;
-        margin-top: 15%;
-    }
 }
