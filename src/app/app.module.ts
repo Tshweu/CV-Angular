@@ -15,6 +15,8 @@ import { HomeComponent } from './home/home.component';
 import { HttpClientModule } from '@angular/common/http';
 import { importType } from '@angular/compiler/src/output/output_ast';
 import { from } from 'rxjs';
+import { NgxTwitterTimelineModule } from 'ngx-twitter-timeline';
+import { TwitterComponent } from './twitter/twitter.component';
 
 @NgModule({
   declarations: [
@@ -25,13 +27,15 @@ import { from } from 'rxjs';
     PortfolioComponent,
     AboutComponent,
     SkillsComponent,
-    HomeComponent
+    HomeComponent,
+    TwitterComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
+    NgxTwitterTimelineModule
   ],
   providers: [],
   bootstrap: [AppComponent]
