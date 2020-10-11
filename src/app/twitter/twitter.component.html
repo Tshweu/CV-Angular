@@ -1,0 +1,13 @@
+
+<div class="heading-grid">
+    <div id="line-1"><div class="line"></div></div>
+    <div id="head-logo"></div>
+    <div id="header-text">Angular Tweets</div>
+    <div id="line-2"><div class="line"></div></div>
+</div>
+<div class="twitter-feed">
+    <ngx-twitter-timeline
+    [data]="{sourceType: 'url', url: 'https://twitter.com/Angular'}"
+    [opts]="{tweetLimit: 5}">
+    </ngx-twitter-timeline>
+</div>

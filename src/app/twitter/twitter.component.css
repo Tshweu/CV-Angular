@@ -1,0 +1,57 @@
+.heading-grid{
+    display: grid;
+    grid-template-columns: 1fr 0.35fr 1fr 1fr;
+    grid-template-rows: repeat(3,1fr);   
+    min-height: 120px;
+    margin-top: 15%;
+}
+#head-logo{
+    grid-column: 2;
+    grid-row: 1/4;
+    background: url(/assets/Logo-banner.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.line{
+    height: 4px;
+    width: 100%;
+    background-color: rgba(46,46,46,0.6);
+}
+
+#line-1{
+    grid-column: 1;
+    grid-row: 2;
+    padding-top: 10px;
+}
+
+#line-2{
+    grid-column: 3/5;
+    grid-row: 2;
+    padding-top: 10px;
+}
+#header-text{
+    grid-column: 3;
+    justify-self: start;
+    align-self: end;
+    font-size: large;
+}
+
+.twitter-feed{
+    display: block;
+    width: 80vw;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+@media screen and (max-width: 500px){
+    #head-logo{
+        grid-column: 2;
+        grid-row: 1/4;
+        background: url(/assets/Logo-banner-small.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+        z-index: 99;
+    }
+}
