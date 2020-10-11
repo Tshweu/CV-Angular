@@ -219,6 +219,37 @@ div.skills-levels{
     background-color: grey;
     width: 50%;
 }
+
+.t-btn{
+    display: table;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
+    min-width: 220px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    min-height: 60px;
+}
+
+a{
+    all: unset;
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    cursor: pointer;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: black;
+    border-radius: 10px;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+a:hover,a:focus{
+    background-color:  rgba(46,46,46,0.6);
+}
+
+
 /* Media queries */
 @media screen and (max-width: 999){
     /* div.skills-levels{
