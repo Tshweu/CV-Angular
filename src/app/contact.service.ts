@@ -7,7 +7,7 @@ import { ContactUser } from './contact-user'
   providedIn: 'root'
 })
 export class ContactService {
-_url = 'http://contact-nodemailer-api.herokuapp.com/send';
+_url = 'https://contact-nodemailer-api.herokuapp.com/send';
   constructor(private _http: HttpClient) { }
 
   enroll(userInfo: ContactUser){
