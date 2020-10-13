@@ -20,8 +20,11 @@ export class ContactComponent implements OnInit {
     // console.log(this.userModel);
     this._contactService.enroll(this.userModel)
     .subscribe(
-      data => console.log('success',data)
-      ,error => console.error('Error',error)
+      error => console.error('Error',error),
+      res =>  {alert('Your message has been sent.'),
+                console.log(res);
+                this.userModel = new ContactUser('','','','','');
+              }
     )
   }
 
